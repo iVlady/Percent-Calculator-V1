@@ -19,42 +19,24 @@ class ChooseOptionViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == segueIdentifier else { return }
+        let destination = segue.destination as! FormulaViewController
+        destination.buttonTag = (sender as! UIButton).tag
+    }
 
     @IBAction func buttonOnePressed(_ sender: UIButton) {
         
-        performSegue(withIdentifier: segueIdentifier, sender: UIButton?.self)
-        
-        func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
-            guard let formulaVC = segue.destination as? FormulaViewController
-            else { return }
-
-            formulaVC.buttonTag = buttonOne.tag
-
-        }
+        performSegue(withIdentifier: segueIdentifier, sender: sender)
     }
     
     @IBAction func buttonTwoPressed(_ sender: UIButton) {
-        performSegue(withIdentifier: segueIdentifier, sender: UIButton?.self)
-        
-        func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
-            guard let formulaVC = segue.destination as? FormulaViewController
-            else { return }
-
-            formulaVC.buttonTag = buttonTwo.tag
-
-        }
+        performSegue(withIdentifier: segueIdentifier, sender: sender)
     }
     
     @IBAction func buttonThreePressed(_ sender: UIButton) {
-        performSegue(withIdentifier: segueIdentifier, sender: UIButton?.self)
-        
-        func prepare(for segue: UIStoryboardSegue, sender: UIButton) {
-            guard let formulaVC = segue.destination as? FormulaViewController
-            else { return }
-
-            formulaVC.buttonTag = buttonThree.tag
-
-        }
+        performSegue(withIdentifier: segueIdentifier, sender: sender)
     }
     
 }
