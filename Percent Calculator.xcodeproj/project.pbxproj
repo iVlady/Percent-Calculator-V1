@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		B605A91827DD263000A052EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B605A91727DD263000A052EF /* AppDelegate.swift */; };
 		B605A91A27DD263000A052EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B605A91927DD263000A052EF /* SceneDelegate.swift */; };
-		B605A91C27DD263000A052EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B605A91B27DD263000A052EF /* ViewController.swift */; };
+		B605A91C27DD263000A052EF /* ChooseOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B605A91B27DD263000A052EF /* ChooseOptionViewController.swift */; };
 		B605A91F27DD263000A052EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B605A91D27DD263000A052EF /* Main.storyboard */; };
 		B605A92127DD263100A052EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B605A92027DD263100A052EF /* Assets.xcassets */; };
 		B605A92427DD263100A052EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B605A92227DD263100A052EF /* LaunchScreen.storyboard */; };
+		B64CB17127DD39CB00BF8CE5 /* FormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64CB17027DD39CB00BF8CE5 /* FormulaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B605A91427DD263000A052EF /* Percent Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Percent Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B605A91727DD263000A052EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B605A91927DD263000A052EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B605A91B27DD263000A052EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B605A91B27DD263000A052EF /* ChooseOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseOptionViewController.swift; sourceTree = "<group>"; };
 		B605A91E27DD263000A052EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B605A92027DD263100A052EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B605A92327DD263100A052EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B605A92527DD263100A052EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B64CB17027DD39CB00BF8CE5 /* FormulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormulaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		B605A91627DD263000A052EF /* Percent Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				B605A91727DD263000A052EF /* AppDelegate.swift */,
-				B605A91927DD263000A052EF /* SceneDelegate.swift */,
-				B605A91B27DD263000A052EF /* ViewController.swift */,
-				B605A91D27DD263000A052EF /* Main.storyboard */,
+				B64CB16F27DD38CE00BF8CE5 /* Storyboards */,
+				B64CB16E27DD38C500BF8CE5 /* View Controllers */,
+				B64CB16D27DD38AD00BF8CE5 /* Supporting Files */,
 				B605A92027DD263100A052EF /* Assets.xcassets */,
-				B605A92227DD263100A052EF /* LaunchScreen.storyboard */,
-				B605A92527DD263100A052EF /* Info.plist */,
 			);
 			path = "Percent Calculator";
+			sourceTree = "<group>";
+		};
+		B64CB16D27DD38AD00BF8CE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B605A91727DD263000A052EF /* AppDelegate.swift */,
+				B605A91927DD263000A052EF /* SceneDelegate.swift */,
+				B605A92527DD263100A052EF /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B64CB16E27DD38C500BF8CE5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B605A91B27DD263000A052EF /* ChooseOptionViewController.swift */,
+				B64CB17027DD39CB00BF8CE5 /* FormulaViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		B64CB16F27DD38CE00BF8CE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B605A91D27DD263000A052EF /* Main.storyboard */,
+				B605A92227DD263100A052EF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B605A91C27DD263000A052EF /* ViewController.swift in Sources */,
+				B605A91C27DD263000A052EF /* ChooseOptionViewController.swift in Sources */,
 				B605A91827DD263000A052EF /* AppDelegate.swift in Sources */,
 				B605A91A27DD263000A052EF /* SceneDelegate.swift in Sources */,
+				B64CB17127DD39CB00BF8CE5 /* FormulaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +319,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 597R77T78X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Percent Calculator/Info.plist";
+				INFOPLIST_FILE = "Percent Calculator/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +347,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 597R77T78X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Percent Calculator/Info.plist";
+				INFOPLIST_FILE = "Percent Calculator/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
