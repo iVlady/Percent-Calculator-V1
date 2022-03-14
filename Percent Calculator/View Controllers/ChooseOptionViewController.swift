@@ -22,12 +22,11 @@ class ChooseOptionViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == segueIdentifier else { return }
-        let destination = segue.destination as! FormulaViewController
-        destination.buttonTag = (sender as! UIButton).tag
+        let formulaVC = segue.destination as! FormulaViewController
+        formulaVC.buttonTag = (sender as! UIButton).tag
     }
 
     @IBAction func buttonOnePressed(_ sender: UIButton) {
-        
         performSegue(withIdentifier: segueIdentifier, sender: sender)
     }
     
@@ -38,6 +37,5 @@ class ChooseOptionViewController: UIViewController {
     @IBAction func buttonThreePressed(_ sender: UIButton) {
         performSegue(withIdentifier: segueIdentifier, sender: sender)
     }
-    
 }
 

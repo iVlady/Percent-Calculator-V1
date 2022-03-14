@@ -11,14 +11,14 @@ class FormulaViewController: UIViewController {
 
     @IBOutlet weak var labelScreen: UILabel!
     
-//    enum CalculationOption {
-//        case buttonOne
-//        case buttonTwo
-//        case buttonThree
-//    }
+    enum CalculationOption: Int {
+        case buttonOne = 1
+        case buttonTwo = 2
+        case buttonThree = 3
+    }
     
     var buttonTag = Int()
-//    var chosenOption = CalculationOption.self
+    lazy var chosenOption = CalculationOption(rawValue: buttonTag)
     
     func getButtonTag () {
         if buttonTag == 1 {
@@ -34,10 +34,8 @@ class FormulaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getButtonTag()
-        
 
+        getButtonTag()
     }
 }
 
